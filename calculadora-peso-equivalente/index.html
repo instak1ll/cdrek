@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso Equivalente</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Peso Equivalente</h1>
+
+        <!-- Datos de la primera persona -->
+        <label for="altura1">Altura de la primera persona (metros):</label>
+        <input type="number" id="altura1" placeholder="Ej: 1.75" step="0.01">
+
+        <label for="peso1">Peso corporal de la primera persona (kg):</label>
+        <input type="number" id="peso1" placeholder="Ej: 70" step="0.1">
+
+        <label for="pesoLevantado">Peso levantado por la primera persona (kg):</label>
+        <input type="number" id="pesoLevantado" placeholder="Ej: 100" step="0.1">
+
+        <!-- Datos de la segunda persona -->
+        <label for="altura2">Altura de la segunda persona (metros):</label>
+        <input type="number" id="altura2" placeholder="Ej: 1.80" step="0.01">
+
+        <label for="peso2">Peso corporal de la segunda persona (kg):</label>
+        <input type="number" id="peso2" placeholder="Ej: 80" step="0.1">
+
+        <!-- Botón para calcular -->
+        <button onclick="calcularPesoEquivalente()">Calcular Peso Equivalente</button>
+
+        <!-- Resultado -->
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

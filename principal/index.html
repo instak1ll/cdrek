@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación con Navegación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showApp('home')">Home</a></li>
+            <li><a href="#" onclick="showApp('calculadora-repeticiones')">Calculadora de Repeticiones</a></li>
+            <li><a href="#" onclick="showApp('calculadora-peso-equivalente')">Calculadora de Peso Equivalente</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="section">
+        <h1>Bienvenido a la página principal</h1>
+        <p>Aquí tienes dos opciones para elegir:</p>
+        <ul>
+            <li><a href="#" onclick="showApp('calculadora-repeticiones')">Calculadora de Repeticiones</a></li>
+            <li><a href="#" onclick="showApp('calculadora-peso-equivalente')">Calculadora de Peso Equivalente</a></li>
+        </ul>
+    </div>
+
+    <div id="app-container" class="section">
+        <!-- Aquí se cargará el contenido de las aplicaciones -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

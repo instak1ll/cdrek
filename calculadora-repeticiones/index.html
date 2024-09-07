@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Repeticiones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Repeticiones Equivalentes</h1>
+        <form id="repsForm">
+            <label for="currentWeight">Peso Actual (kg):</label>
+            <input type="number" id="currentWeight" required>
+
+            <label for="reps">Repeticiones que Haces:</label>
+            <input type="number" id="reps" required>
+
+            <label for="newWeight">Peso Nuevo (kg):</label>
+            <input type="number" id="newWeight" required>
+
+            <button type="button" onclick="calculateReps()">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="cdre.js"></script>
+</body>
+</html>
