@@ -11,6 +11,6 @@ function showApp(appName) {
         appContainer.style.display = 'block';
         
         // Cargar la aplicación seleccionada en el contenedor
-        appContainer.innerHTML = `<iframe src="../${appName}/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>`;
+        appContainer.innerHTML = `<iframe src="${appName}/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>`;
     }
 }
